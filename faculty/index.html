@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="faculty-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Faculty Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <h2>Welcome, Professor!</h2>
+            <p>Access your courses, manage student interactions, and update your teaching resources.</p>
+            <button onclick="location.href='#courses'">Manage Courses</button>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="section">
+            <h2>Your Courses</h2>
+            <div class="course-card">
+                <h3>Introduction to Computer Science</h3>
+                <p>Manage your students, assignments, and course content.</p>
+                <button id="manage-course1" class="manage-course-btn">Manage Course</button>
+            </div>
+            <div class="course-card">
+                <h3>Data Structures and Algorithms</h3>
+                <p>Manage your students, assignments, and course content.</p>
+                <button id="manage-course2" class="manage-course-btn">Manage Course</button>
+            </div>
+            <div class="course-card">
+                <h3>Advanced Web Development</h3>
+                <p>Manage your students, assignments, and course content.</p>
+                <button id="manage-course3" class="manage-course-btn">Manage Course</button>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <h2>Teaching Resources</h2>
+            <div class="resource-card">
+                <h3>Lecture Slides</h3>
+                <p>Upload and share lecture slides with your students.</p>
+                <button id="upload-slides">Upload Slides</button>
+            </div>
+            <div class="resource-card">
+                <h3>Assignment Templates</h3>
+                <p>Download and distribute assignment templates.</p>
+                <button id="view-templates">View Templates</button>
+            </div>
+            <div class="resource-card">
+                <h3>Research Materials</h3>
+                <p>Access and share research papers and resources.</p>
+                <button id="access-materials">Access Materials</button>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <h2>Your Profile</h2>
+            <div class="profile-card">
+                <h3 id="profile-name">Name: Dr. Jane Doe</h3>
+                <p id="profile-email">Email: jane.doe@university.edu</p>
+                <button id="edit-profile">Edit Profile</button>
+                <button id="logout">Logout</button>
+            </div>
+            <form id="edit-profile-form" style="display: none;">
+                <input type="text" id="new-name" placeholder="New Name">
+                <input type="email" id="new-email" placeholder="New Email">
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Faculty Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
