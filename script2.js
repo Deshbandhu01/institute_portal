@@ -1,9 +1,9 @@
 document.getElementById('student-btn').addEventListener('click', function() {
-    showLoginForm('Student', '../student/index.html'); // Path to student login page
+    showLoginForm('Student', './student/index.html'); // Path to student login page
 });
 
 document.getElementById('faculty-btn').addEventListener('click', function() {
-    showLoginForm('Faculty', '../faculty/index.html'); // Path to faculty login page
+    showLoginForm('Faculty', './faculty/index.html'); // Path to faculty login page
 });
 
 function showLoginForm(userType, actionUrl) {
